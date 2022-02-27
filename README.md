@@ -25,7 +25,7 @@ OR
 ```
 ### In Testrunner
 
-Open Cypress using below command in cmd:
+Inside `CypressAutomation` directory open Cypress using below command:
 ```bash
 .\node_modules\.bin\cypress open
 ```
