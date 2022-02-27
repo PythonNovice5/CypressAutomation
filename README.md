@@ -30,7 +30,7 @@ Inside `CypressAutomation` directory open Cypress using below command:
 .\node_modules\.bin\cypress open
 ```
 Under `2-advanced-examples` click on any of the below test files you want to execute in Test runner:
-***mail_test.js, single_file_execution.js***
+**mail_test.js, single_file_execution.js**
 ![image](https://user-images.githubusercontent.com/25523526/155897627-d628dfec-d4a8-48e9-8554-a1dd13c4826b.png)
 
 
