@@ -12,9 +12,8 @@ describe('Testing Mailshake Dashboard Left Panel links',function(){
 
         lp.enterUserEmail('michaelscott@mailinator.com')
         lp.enterPassword("'F'-\\\(3S@e9^(w=/*PM@")
-        lp.clickLoginBtn()
+        lp.clickLoginBtn()        
         
-        //the following are commented out as the application was logging 
         // lp.verifyTitle('Dashboard | Mailshake')     
         // cy.get('div h1').should('have.text',"Dashboard")       
         
