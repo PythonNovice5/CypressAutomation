@@ -14,7 +14,8 @@ describe('Testing Mailshake Dashboard Left Panel links',function(){
         lp.enterPassword("'F'-\\\(3S@e9^(w=/*PM@")
         lp.clickLoginBtn()
         
-        // lp.verifyTitle('Dashboard | Mailshake')
+        //the following are commented out as the application was logging 
+        // lp.verifyTitle('Dashboard | Mailshake')     
         // cy.get('div h1').should('have.text',"Dashboard")       
         
     })
@@ -35,8 +36,7 @@ describe('Testing Mailshake Dashboard Left Panel links',function(){
             cy.location('href').should('not.contain',"undefined")
             
             //Any of the following two methods can be used to verify the links
-            // verifying the href attribute to validate the page
-            
+            // verifying the href attribute to validate the page            
             cy.location('href').should('contain', `/${page.replace(/\s+/g, '-').toLowerCase()}`)
 
             // verifying the page url to validate the page
