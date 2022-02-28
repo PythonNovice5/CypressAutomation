@@ -32,9 +32,11 @@ describe('Testing Mailshake Dashboard Left Panel links',function(){
                 page="Integrations"
             }
             
+            cy.location('href').should('not.contain',"undefined")
+            
             //Any of the following two methods can be used to verify the links
             // verifying the href attribute to validate the page
-            cy.location('href').should('not.contain',"undefined")
+            
             cy.location('href').should('contain', `/${page.replace(/\s+/g, '-').toLowerCase()}`)
 
             // verifying the page url to validate the page
