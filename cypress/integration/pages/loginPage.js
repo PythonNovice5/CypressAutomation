@@ -1,29 +1,28 @@
 /// <reference types="cypress" />
 
-import { curry } from "lodash"
-
  
 
 class loginPage {
 
-    visitURL(){
-        return cy.visit('https://app.mailshake.com/login')
+    visitURL(){        
+        return cy.visit('https://assessment.speakap.com/',{ timeout: 10000 })
     }
 
 
     userEmail() {
 
-        return cy.get('[type="email"] input')
+        return cy.get('input[type="email"]')
     }
 
     passwordInput() {
-        return cy.get('[type="Password"] input')
+        return cy.get('input[type="password"]')
     }
 
     loginBtn() {
-        return cy.get('button:contains("Log In")')
+        return cy.get('button[type="submit"]')
     }
 
+    
 
     enterUserEmail(email)
         {
@@ -47,6 +46,8 @@ class loginPage {
 
     verifyTitle(toBeVerified)
     {
+
+    
         cy.title().should('eq',toBeVerified)
         return this
     }
